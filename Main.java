@@ -26,9 +26,10 @@ class Main {
     .concat(": is the number."));
 
     scanner.close();
-
+		
 		//Create object of class Gabriel with Integer
 		Gabriel<Integer> gabeClass = new Gabriel<Integer>(num);
+
 
 		System.out.println("Here is your object "
 				.concat(String.valueOf(gabeClass.getMyObject())));
