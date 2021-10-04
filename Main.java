@@ -1,6 +1,6 @@
 import java.util.*;
 
-
+// Gabriel class, uses Java Generics
 class Gabriel<E> {
 	private E myObject;
 	
@@ -16,7 +16,6 @@ class Gabriel<E> {
 
 class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
 
     Scanner scanner = new Scanner(System.in);
 
@@ -28,9 +27,12 @@ class Main {
 
     scanner.close();
 
+		//Create object of class Gabriel with Integer
 		Gabriel<Integer> gabeClass = new Gabriel<Integer>(num);
 
-		System.out.println("Here is your object ".concat(String.valueOf(gabeClass.getMyObject())));
-		System.out.println("And here is its class: ".concat(String.valueOf(gabeClass.getClass())));
+		System.out.println("Here is your object "
+				.concat(String.valueOf(gabeClass.getMyObject())));
+		System.out.println("And here is its class: "
+				.concat(String.valueOf(gabeClass.getClass())));
   }
 }
