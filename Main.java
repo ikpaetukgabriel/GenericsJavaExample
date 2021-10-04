@@ -17,23 +17,23 @@ class Gabriel<E> {
 class Main {
   public static void main(String[] args) {
 
-    Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
 
-    System.out.print("Please, enter a number: ");
-    int num = scanner.nextInt();
+	System.out.print("Please, enter a number: ");
+	int num = scanner.nextInt();
 
-    System.out.println(String.valueOf(num)
-    .concat(": is the number."));
+	System.out.println(String.valueOf(num)
+	.concat(": is the number."));
 
-    scanner.close();
-		
-		//Create object of class Gabriel with Integer
-		Gabriel<Integer> gabeClass = new Gabriel<Integer>(num);
+	scanner.close();
+
+	//Create object of class Gabriel with Integer
+	Gabriel<Integer> gabeClass = new Gabriel<Integer>(num);
 
 
-		System.out.println("Here is your object "
-				.concat(String.valueOf(gabeClass.getMyObject())));
-		System.out.println("And here is its class: "
-				.concat(String.valueOf(gabeClass.getClass())));
+	System.out.println("Here is your object "
+			.concat(String.valueOf(gabeClass.getMyObject())));
+	System.out.println("And here is its class: "
+			.concat(String.valueOf(gabeClass.getClass())));
   }
 }
